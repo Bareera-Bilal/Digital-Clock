@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at center, #0f0f0f, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Clock container */
+.clock-container {
+  background-color: #121212;
+  padding: 40px 60px;
+  border-radius: 15px;
+  border: 2px solid white;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.clock-container:hover {
+  transform: scale(1.05);
+}
+
+/* Clock text */
+#clock {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+  margin-top: 150px;
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .clock-container {
+    padding: 20px 30px;
+  }
+
+  #clock {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
